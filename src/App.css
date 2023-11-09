@@ -1,6 +1,7 @@
-.App {
-  text-align: center;
-}
+
+/* @media permet de s'adapter à tous les écrans*/
+
+/****************/
 
 .App-logo {
   height: 40vmin;
@@ -43,6 +44,10 @@
     --primary-white:#fff;
     --primary-orange:#f98100;
     --primary-dark:rgba(255,255,255,0);
+    --primary-violet:#430366;
+    --primary-red:#ef4035;
+    --primary-hover-red:#f33501;
+    --primary-gris:#b19f9a;
 
   }
 
@@ -72,6 +77,7 @@ nav ul li{
   cursor: pointer;
 
 }
+/*  Couleur du font de navbar */
  .navbar-nav>li>a{
   margin-right: 0.75rem;
   margin-left: 1.75rem;
@@ -95,3 +101,61 @@ nav ul li{
   border-top: 0.1875rem solid var(--primary-orange);
 
  }
+
+
+ /***************HEADER Le titre simple*/
+ .header-wrapper{
+  position: relative;
+  background: url(background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+
+}
+.main-info{
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condesed sans-serif";
+}
+
+.main-info h1{
+  text-transform: uppercase;
+}
+.typed-text{
+  font-size: 2rem;
+  color:  var(--primary-violet);
+}
+
+
+
+/*   *************** HEADER MAIN OFFER  BUTTOM********/
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  position: relative;
+  margin: 2rem;
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-orange);
+  transition: .2s ease-in-out;
+}
+/*  Quand on réduit l'écran cela change de couleur
+@media(max-width:768px){
+  .main-info{
+    font-size: 2rem;
+    color: var(--primary-white);
+  }
+
+}
+*/
+
+
